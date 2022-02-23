@@ -1,0 +1,36 @@
+.works-section {
+  padding-top: 0px;
+}
+
+.works-title {
+  font-family: var(--primary-font);
+  @include font(36px, 700, 1.16, 0.03em);
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 50px;
+}
+
+.works {
+  display: flex;
+}
+.works-overlay {
+  position: relative;
+}
+.works-overlay:not(:last-child) {
+  margin-right: 30px;
+}
+.works-item {
+  position: absolute;
+  font-family: var(--primary-font);
+  @include font(14px, 700, 1.14, 0.03em);
+  color: var(--works-item);
+  padding: 27px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+}

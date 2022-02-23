@@ -1,0 +1,30 @@
+.features {
+  display: flex;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+.features-title {
+  font-family: var(--primary-font);
+  @include font(14px, 700, 1.14, 00.03em);
+  text-transform: uppercase;
+  color: var(--text-primary);
+  align-items: flex-start;
+  flex-direction: flex-start;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 10px;
+}
+.features-text {
+  font-family: var(--primary-font);
+  @include font(14px, null, 1.71, 00.03em);
+  color: var(--contact-link);
+}
+.features-icon {
+  height: 120px;
+  background-color: var(--team-text);
+  border-radius: 4px;
+  justify-content: center;
+  @extend %align-list;
+  margin-bottom: 30px;
+}
