@@ -7,12 +7,12 @@
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   padding-bottom: 94px;
 }
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
   @extend %align-list;
@@ -22,23 +22,23 @@
     border-color: var(--text-web-color);
   }
 }
-.clients-item:not(:first-child) {
+.clients__item:not(:first-child) {
   margin-left: 30px;
 }
-.clients-icon {
+.clients__icon {
   fill: var(--team-icon);
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .clients-item:hover &,
-  .clients-item:focus & {
+  .clients__item:hover &,
+  .clients__item:focus & {
     fill: var(--text-web-color);
   }
-  .clients-link:hover &,
-  .clients-link:focus & {
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: var(--text-web-color);
   }
 }
-.clients-link {
+.clients__link {
   border: 1px solid transparent;
   border-color: var(--team-icon);
   width: 100%;
@@ -54,7 +54,7 @@
   }
 }
 
-.clients-item .footer-link {
+.clients__item .footer__link {
   display: flex;
   margin-top: 20px;
 }

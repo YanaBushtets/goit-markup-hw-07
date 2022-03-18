@@ -3,13 +3,11 @@
   display: flex;
   justify-content: center;
 }
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.social-item-do:not(:last-child) {
-  margin-right: 10px;
-}
-.filter-button {
+
+.filter__button {
   border: transparent;
   font-family: var(--primary-font);
   @include font(16px, 500, 1.62, 00.03em);

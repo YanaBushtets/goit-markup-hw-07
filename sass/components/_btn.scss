@@ -1,7 +1,7 @@
 .btn {
   font-family: var(--primary-font);
   @include font(16px, 700, 1.87, 0.06em);
-  @extend %align-test;
+  @extend %align-list;
   justify-content: center;
   background-color: var(--text-web-color);
   color: var(--works-item);

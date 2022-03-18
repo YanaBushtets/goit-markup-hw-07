@@ -2,7 +2,7 @@
   padding-top: 0px;
 }
 
-.works-title {
+.works-section__title {
   font-family: var(--primary-font);
   @include font(36px, 700, 1.16, 0.03em);
   text-align: center;
@@ -13,13 +13,13 @@
 .works {
   display: flex;
 }
-.works-overlay {
+.works__overlay {
   position: relative;
 }
-.works-overlay:not(:last-child) {
+.works__overlay:not(:last-child) {
   margin-right: 30px;
 }
-.works-item {
+.works__item {
   position: absolute;
   font-family: var(--primary-font);
   @include font(14px, 700, 1.14, 0.03em);

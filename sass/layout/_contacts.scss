@@ -1,4 +1,4 @@
-.icon-item {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
   cursor: pointer;
@@ -8,13 +8,13 @@
   margin-left: auto;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-.contact-link {
+.contact__link {
   font-family: var(--primary-font);
   color: var(--contact-link);
-  @include font(14px, 500, 1.17, 00.02em);
+  @include font(14px, 500, 1.17, 0.02em);
   text-decoration: none;
   padding: 32px 0;
   @extend %align-list;

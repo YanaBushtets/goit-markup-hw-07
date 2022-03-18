@@ -36,7 +36,7 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 }
-.modal-close-btn {
+.modal__close-btn {
   top: 8px;
   right: 8px;
   position: absolute;
@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 
-.modal-close {
+.modal__close {
   top: 5px;
   right: 5px;
   position: absolute;
@@ -59,7 +59,7 @@
     transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.modal-title {
+.modal__title {
   font-family: var(--primary-font);
   @include font(20px, 700, 1.17, 0.03em);
   color: var(--text-primary);
@@ -88,12 +88,12 @@
   position: relative;
   margin-bottom: 10px;
 }
-.modal-policy {
+.modal__policy {
   display: flex;
   justify-content: center;
   margin-top: -10px;
 }
-.modal-label {
+.modal__label {
   font-family: var(--primary-font);
 
   font-size: 12px;
@@ -104,7 +104,7 @@
   margin-bottom: 4px;
   display: block;
 }
-.modal-text {
+.modal__text {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -142,11 +142,11 @@
     border-radius: 2px;
   }
 }
-.policy-text-item {
+.policy-text__item {
   font-family: var(--primary-font);
   @include font(14px, 400, 1.71, 0.03em);
   color: var(--text-web-color);
-  @extend %align-item;
+  @extend %align-list;
 }
 .btn-submit {
   margin-top: 30px;
@@ -161,7 +161,7 @@
   }
 }
 
-.modal-input-wrap {
+.modal__input-wrap {
   position: relative;
 }
 .modal-icon {
@@ -169,8 +169,8 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  .modal-input:hover + &,
-  .modal-input:focus + & {
+  .modal__input:hover + &,
+  .modal__input:focus + & {
     fill: var(--text-web-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

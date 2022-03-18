@@ -2,10 +2,10 @@
   display: flex;
   margin-left: auto;
 }
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-link {
+.site-nav__link {
   font-family: var(--primary-font);
   color: var(--text-primary);
   @include font(14px, 500, 1.17, 0.02em);
@@ -26,7 +26,7 @@
   }
 }
 
-.current .nav-link::after {
+.current .site-nav__link::after {
   content: "";
   position: absolute;
   left: 0;
