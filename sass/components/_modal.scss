@@ -66,7 +66,7 @@
   text-align: center;
   margin-bottom: 12px;
 }
-.modal-input {
+.modal__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -169,9 +169,9 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  .modal__input:hover + &,
-  .modal__input:focus + & {
-    fill: var(--text-web-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+.modal__input:hover + .modal-icon,
+.modal__input:focus + .modal-icon {
+  fill: var(--text-web-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
